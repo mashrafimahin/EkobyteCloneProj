@@ -3,11 +3,14 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 // context
 import { ScrollProvider } from "./context/ScrollContext.tsx";
+import { ResizeProvider } from "./context/ResizeContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ScrollProvider>
-      <App />
+      <ResizeProvider>
+        <App />
+      </ResizeProvider>
     </ScrollProvider>
   </StrictMode>,
 );

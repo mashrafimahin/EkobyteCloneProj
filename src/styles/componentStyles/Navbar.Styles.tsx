@@ -130,6 +130,7 @@ export const CTA = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 
   .hamburger {
     display: none;

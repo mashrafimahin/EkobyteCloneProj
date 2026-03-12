@@ -1,5 +1,6 @@
 interface NavbarProps {
   scrolled?: boolean;
+  resize?: number;
 }
 // hook
 import React from "react";
@@ -17,7 +18,7 @@ import { PrimaryButton } from "../styles/Utilities";
 import { NavInfo } from "../data/NavigationData";
 
 // main
-const Navbar: FC<NavbarProps> = ({ scrolled }) => {
+const Navbar: FC<NavbarProps> = ({ scrolled, resize }) => {
   return (
     <Header $scrolled={scrolled}>
       <div className="header-inner">
